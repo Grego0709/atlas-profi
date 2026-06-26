@@ -1,0 +1,471 @@
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --navy-deep: #0a1a30;
+  --navy: #0f2540;
+  --gold: #d4a656;
+  --gold-bright: #f0c878;
+  --cream: #f3ecdd;
+}
+
+body{
+  background: var(--navy-deep);
+  color: var(--cream);
+  font-family: 'Inter', sans-serif;
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--navy-deep);
+  border-bottom: 1px solid var(--gold);
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+}
+
+.nav-logo{
+  font-family: 'Pinyon Script', cursive;
+  color: var(--gold-bright);
+  font-size: 1.5rem;
+}
+
+.nav-links{
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a{
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.nav-cta{
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold-bright);
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+
+.hero{
+  text-align: center;
+  padding: 96px 28px;
+}
+
+.hero-eyebrow{
+  font-size: 0.78rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 22px;
+}
+
+.hero h1{
+  font-family: 'Pinyon Script', cursive;
+  font-size: clamp(2.2rem, 8vw, 4rem);
+  color: var(--gold-bright);
+  margin-bottom: 18px;
+}
+
+.hero h2{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  margin-bottom: 8px;
+}
+
+.hero .practitioner{
+  color: var(--cream);
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.cta-row{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.btn-primary{
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy-deep);
+  font-weight: 600;
+  padding: 14px 32px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.btn-ghost{
+  border: 1px solid var(--cream);
+  color: var(--cream);
+  padding: 14px 32px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.practitioner a{
+  color: var(--gold-bright);
+  text-decoration: none;
+}
+
+
+
+.spine-wrap{
+  width: 120px;
+  height: 240px;
+  margin: 0 auto 44px;
+}
+
+.spine-wrap svg{
+  width: 100%;
+  height: 100%;
+}
+
+.vertebra{
+  fill: none;
+  stroke: var(--cream);
+  stroke-width: 2;
+  opacity: 0.4;
+}
+
+.pulse-dot{
+  fill: var(--gold-bright);
+  filter: drop-shadow(0 0 8px var(--gold-bright));
+  animation: travel 3.2s ease-in-out infinite;
+}
+
+@keyframes travel{
+  0%   { transform: translateY(0px);   opacity: 0; }
+  8%   { transform: translateY(8px);   opacity: 1; }
+  50%  { transform: translateY(106px); opacity: 1; }
+  92%  { transform: translateY(204px); opacity: 1; }
+  100% { transform: translateY(212px); opacity: 0; }
+}
+/* it can be cut out the next two parts ring and the spin, in the html it would be the first circle*/
+/*.ring{
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 1;
+  opacity: 0.5;
+  transform-origin: 60px 20px;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin{
+  to{ transform: rotate(360deg); }
+} */
+
+
+
+section{
+  padding: 90px 28px;
+  scroll-margin-top: 80px;
+}
+
+.section-label{
+  font-size: 0.78rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.section-title{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.about-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.about-text p{
+  font-family: 'Inter', serif;
+  color: var(--cream);
+  opacity: 0.75;
+  margin-bottom: 18px;
+}
+
+.stat-stack{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.stat-card{
+  background: var(--navy);
+  border: 1px solid var(--gold);
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.stat-num{
+  font-family: 'Cormorant Garamond', serif;
+  display: block;
+  font-size: 2rem;
+  color: var(--gold-bright);
+  margin-bottom: 6px;
+}
+
+.stat-label{
+  font-size: 0.9rem;
+  color: var(--cream);
+  opacity: 0.7;
+}
+
+
+
+.symptoms{
+  background: var(--navy);
+}
+
+.symptom-cols{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.symptom-group h4{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  /* color: var(--gold-bright); */
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+.symptom-list{
+  list-style: none;
+}
+
+.symptom-list li{
+  padding: 11px 0 11px 26px;
+  position: relative;
+  border-bottom: 1px solid rgba(243, 236, 221, 0.1);
+  color: var(--cream);
+  opacity: 0.8;
+  font-size: 0.97rem;
+}
+
+.symptom-list li::before{
+  content: '➤';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.75rem;
+  top: 14px;
+}
+
+
+.benefits-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefit-item{
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  background: var(--navy);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+}
+
+.check{
+  color: var(--gold-bright);
+  font-size: 1.1rem;
+}
+
+.txt{
+  color: var(--cream);
+  font-size: 0.96rem;
+}
+
+.quote-banner{
+  text-align: center;
+  margin-top: 64px;
+  padding: 44px 20px;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+
+.quote-banner p{
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--gold-bright);
+}
+
+
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-card, .hours-card{
+  background: var(--navy);
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  padding: 40px;
+}
+
+.name{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: var(--cream);
+  margin-bottom: 24px;
+}
+
+.contact-line{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(243, 236, 221, 0.1);
+  font-size: 0.97rem;
+}
+
+.contact-line:last-child{
+  border-bottom: none;
+}
+
+.contact-line .icon{
+  color: var(--gold);
+  width: 18px;
+  text-align: center;
+}
+
+.contact-line a, .contact-line span{
+  color: var(--cream);
+}
+
+.hours-card h4{
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--gold-bright);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.hours-card p{
+  color: var(--cream);
+  opacity: 0.75;
+  margin-bottom: 14px;
+}
+
+.disclaimer{
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(243, 236, 221, 0.08);
+  font-size: 0.8rem;
+  color: var(--cream);
+  opacity: 0.6;
+  line-height: 1.6;
+}
+
+
+footer{
+  padding: 36px 28px;
+  text-align: center;
+  border-top: 1px solid var(--gold);
+}
+
+.footer-logo{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 1.4rem;
+  color: var(--gold-bright);
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer p{
+  font-size: 0.85rem;
+  color: var(--cream);
+  opacity: 0.6;
+}
+
+.nav-toggle{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-toggle span{
+  width: 24px;
+  height: 2px;
+  background: var(--gold-bright);
+}
+
+@media (max-width: 760px){
+
+  .nav-toggle{
+  display: flex;
+}
+
+  .nav-links{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background: var(--navy-deep);
+  border-top: 1px solid var(--gold);
+  padding: 20px 28px;
+}
+
+  .nav-links.open{
+  display: flex;
+}
+
+  .about-grid,
+  .symptom-cols,
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1{
+    font-size: 2.8rem;
+  }
+
+  .hero h2{
+    font-size: 1.2rem;
+  }
+
+  section{
+    padding: 60px 20px;
+  }
+
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Profi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Main info in the nav box-->
+  <header>
+  <div class="nav">
+    <div class="nav-logo">Atlas Profi</div>
+    <nav class="nav-links">
+      <a href="#ueber">Der Atlas</a>
+      <a href="#beschwerden">Beschwerden</a>
+      <a href="#vorteile">Vorteile</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a href="tel:01717772527" class="nav-cta">0171 / 7772527</a>
+  </div>
+  </header>
+
+  <section class="hero">
+  <p class="hero-eyebrow">Atlas-Korrektur · Herzlake</p>
+  <h1>Atlas Profi</h1>
+  <h2>Sanfte, gezielte Atlas-Korrektur für mehr Balance im Körper</h2>
+
+  <div class="spine-wrap">
+  <svg viewBox="0 0 120 240"><!-- coordinate system for drawing => used for the animation -->
+    <!--<ellipse class="ring" cx="60" cy="20" rx="46" ry="16"/>-->
+  <circle cx="60" cy="20" r="16" class="vertebra"/>
+  <line x1="60" y1="36" x2="60" y2="226" class="vertebra"/>
+
+  <defs>
+    <g id="vert-shape">
+      <path d="M -16,-6 Q -20,0 -16,6 L -8,6 Q -6,9 0,9 Q 6,9 8,6 L 16,6 Q 20,0 16,-6 L 8,-6 Q 6,-9 0,-9 Q -6,-9 -8,-6 Z"/>
+      <line x1="-16" y1="0" x2="-25" y2="-4"/>
+      <line x1="16" y1="0" x2="25" y2="-4"/>
+    </g>
+  </defs>
+
+  <use href="#vert-shape" transform="translate(60,50) scale(0.85)" class="vertebra"/>
+<use href="#vert-shape" transform="translate(60,72) scale(0.82)" class="vertebra"/>
+<use href="#vert-shape" transform="translate(60,94) scale(0.8)" class="vertebra"/>
+<use href="#vert-shape" transform="translate(60,116) scale(0.78)" class="vertebra"/>
+<use href="#vert-shape" transform="translate(60,140) scale(0.8)" class="vertebra"/>
+<use href="#vert-shape" transform="translate(60,164) scale(0.88)" class="vertebra"/>
+<use href="#vert-shape" transform="translate(60,190) scale(1)" class="vertebra"/>
+<use href="#vert-shape" transform="translate(60,216) scale(1.1)" class="vertebra"/>
+
+  <circle class="pulse-dot" cx="60" cy="14" r="4"/>
+  </svg>
+  </div>
+
+
+
+  <p class="practitioner">S. Link-Schleicher · <a href="tel:01717772527">0171 / 7772527</a></p>
+
+  <div class="cta-row">
+    <a href="#kontakt" class="btn-primary">Termin vereinbaren</a>
+    <a href="#ueber" class="btn-ghost">Was ist der Atlas?</a>
+  </div>
+  </section>
+
+  <section id="ueber">
+  <!--<p class="section-label">Hintergrund</p>-->
+  <h3 class="section-title">Der Atlas</h3>
+
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Eine Fehlstellung oder Blockade des Atlas beeinflusst die gesamte Körperstabilität und das vegetative Nervensystem — oft mit weitreichenden Auswirkungen auf den gesamten Organismus.</p>
+      <p>Der Hauptnerv (Vagusnerv) verläuft direkt am Atlas. Eine Reizung kann sich auf Herzrhythmus, Kreislauf und Verdauung auswirken.</p>
+      <p>Eine sanfte und gezielte Atlas-Korrektur kann helfen, das Gleichgewicht im Körper wiederherzustellen und die Selbstheilungskräfte zu aktivieren.</p>
+    </div>
+
+    <div class="stat-stack">
+      <div class="stat-card">
+        <span class="stat-num">1. Halswirbel</span>
+        <span class="stat-label">Träger des Kopfes und Verbindung zum zentralen Nervensystem</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">Vagus</span>
+        <span class="stat-label">Hauptnerv verläuft direkt am Atlas vorbei</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">Sanft</span>
+        <span class="stat-label">Gezielte, behutsame Korrektur ohne ruckartige Manipulation</span>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="symptoms" id="beschwerden">
+  <!--<p class="section-label">Leiden Sie unter</p>-->
+  <h3 class="section-title">Mögliche Auswirkungen einer Atlas-Fehlstellung</h3>
+
+  <div class="symptom-cols">
+    <div class="symptom-group">
+      <h4>Körperliche Beschwerden</h4>
+      <ul class="symptom-list">
+        <li>Kopfschmerzen / Migräne</li>
+        <li>Rückenschmerzen / Bandscheibenbeschwerden</li>
+        <li>Schulter- oder Beinschmerzen</li>
+        <li>Schwindel, Sehstörungen und Tinnitus</li>
+        <li>Unterschiedliche Beinlänge und Schonhaltung</li>
+      </ul>
+    </div>
+
+    <div class="symptom-group">
+      <h4>Psychosomatische Beschwerden</h4>
+      <ul class="symptom-list">
+        <li>ADHS</li>
+        <li>Konzentrationsprobleme</li>
+        <li>Angstzustände</li>
+        <li>Schlafstörungen</li>
+      </ul>
+    </div>
+  </div>
+  </section>
+
+  <section id="vorteile">
+  <p class="section-label">Mögliche Vorteile</p>
+  <h3 class="section-title">Was eine Atlas-Korrektur bewirken kann</h3>
+
+  <div class="benefits-grid">
+    <div class="benefit-item"><span class="check">✓</span><span class="txt">Weniger Schmerzen und Verspannungen</span></div>
+    <div class="benefit-item"><span class="check">✓</span><span class="txt">Bessere Körperhaltung und Stabilität</span></div>
+    <div class="benefit-item"><span class="check">✓</span><span class="txt">Entlastung des Nervensystems</span></div>
+    <div class="benefit-item"><span class="check">✓</span><span class="txt">Mehr Energie und Wohlbefinden</span></div>
+    <div class="benefit-item"><span class="check">✓</span><span class="txt">Verbesserte Konzentration und Schlafqualität</span></div>
+    <div class="benefit-item"><span class="check">✓</span><span class="txt">Aktivierung der Selbstheilungskräfte</span></div>
+  </div>
+
+  <div class="quote-banner">
+    <p>„Die Gesundheit. Die höchste Priorität!"</p>
+  </div>
+  </section>
+
+  <section id="kontakt">
+  <p class="section-label">Kontakt</p>
+  <h3 class="section-title">Terminvereinbarung oder Rückfragen</h3>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="name">Stephan Link-Schleicher</div>
+      <div class="contact-line"><span class="icon">☎</span><a href="tel:01717772527">0171 / 7772527</a></div>
+      <div class="contact-line"><span class="icon">✉</span><a href="mailto:gruenau1@gmx.de">gruenau1@gmx.de</a></div>
+      <div class="contact-line"><span class="icon">⚲</span><span>Narzissenweg 46, 49770 Herzlake</span></div>
+    </div>
+
+    <div class="hours-card">
+      <h4>Termin anfragen</h4>
+      <p>Rufen Sie einfach an oder schreiben Sie eine kurze Nachricht — Stephan Link-Schleicher meldet sich zeitnah zur Terminabsprache zurück.</p>
+      <a href="tel:01717772527" class="btn-primary">Jetzt anrufen</a>
+
+      <div class="disclaimer">
+        Hinweis: Die Atlas-Korrektur ist eine ergänzende Methode zur Förderung des Wohlbefindens und ersetzt keine ärztliche Diagnose oder Behandlung. Bei gesundheitlichen Beschwerden konsultieren Sie bitte zusätzlich einen Arzt.
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+  <span class="footer-logo">Atlas Profi</span>
+  <p>© 2026 Atlas Profi · S. Link-Schleicher · Herzlake</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
