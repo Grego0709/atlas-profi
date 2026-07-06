@@ -468,4 +468,23 @@ footer p{
     padding: 60px 20px;
   }
 
+  /*div#spine-cursor{
+  position: fixed !important;
+  left: -100px;
+  top: -100px;
+  pointer-events: none;
+  z-index: 9999;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%);
+  transition: left 0.08s ease, top 0.08s ease;
+  filter: drop-shadow(0 0 4px var(--gold-bright));
+}
+
+body{
+  background: var(--navy-deep);
+  color: var(--cream);
+  font-family: 'Inter', sans-serif;
+  cursor: none;
+}*/
+
 }
