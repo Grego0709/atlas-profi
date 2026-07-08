@@ -41,5 +41,12 @@ document.addEventListener('mouseenter', function() {
   spineCursor.style.opacity = '1';
 });
 const styleOverride = document.createElement('style');
-styleOverride.textContent = '* { cursor: none !important; }';
+styleOverride.textContent = `
+  @media (pointer: fine) {
+    * { cursor: none !important; }
+  }
+  @media (pointer: coarse) {
+    #spine-cursor { display: none !important; }
+  }
+`;
 document.head.appendChild(styleOverride);
